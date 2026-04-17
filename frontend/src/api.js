@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Use Vite's environment variable to determine if we're in production on Vercel
-const API_BASE = import.meta.env.PROD ? '/_/backend/api' : 'http://localhost:5000/api';
+const API_BASE = import.meta.env.PROD ? '/api' : 'http://localhost:5000/api';
 
 export const simulateDFA = async (data) => {
   const res = await axios.post(`${API_BASE}/dfa/simulate`, data);
