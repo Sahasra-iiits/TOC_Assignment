@@ -1,0 +1,1 @@
+const { simulateNDFA } = require('./logic/ndfaLogic'); const ndfa = { startState: 'q0', acceptStates: ['q2'], transitions: [{ from: 'q0', read: 'e', to: 'q1' }, { from: 'q1', read: 'a', to: 'q2' }] }; console.log('Test Epsilon (a):', JSON.stringify(simulateNDFA(ndfa, 'a'), null, 2));  

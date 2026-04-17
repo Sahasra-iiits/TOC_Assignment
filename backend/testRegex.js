@@ -1,0 +1,1 @@
+const { dfaToRegex } = require('./logic/dfaLogic'); const dfa = { states: ['q0', 'q1', 'q2'], startState: 'q0', acceptStates: ['q2'], transitions: [{ from: 'q0', read: 'a', to: 'q1' }, { from: 'q1', read: 'b', to: 'q1' }, { from: 'q1', read: 'c', to: 'q2' }, { from: 'q2', read: 'd', to: 'q0' }] }; console.log(dfaToRegex(dfa));  

@@ -1,0 +1,1 @@
+const { simulateNDFA } = require('./logic/ndfaLogic'); const ndfa = { startState: 'q0', acceptStates: ['q1'], transitions: [{ from: 'q0', read: 'a', to: 'q1' }] }; console.log('Test 1 (a):', simulateNDFA(ndfa, 'a')); console.log('Test 2 (b):', simulateNDFA(ndfa, 'b'));  
